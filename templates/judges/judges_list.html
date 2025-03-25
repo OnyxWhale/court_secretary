@@ -3,9 +3,13 @@
 
 {% block content %}
     <h2>Список судей</h2>
-    <p><a href="{% url 'judge_add' %}" class="button-link">Добавить судью</a></p>
+    <p><a href="{% url 'judges:judge_add' %}" class="button-link">Добавить судью</a></p>
+    <form method="get" class="search-form">
+        <input type="text" name="q" value="{{ query }}" placeholder="Поиск по имени или аккаунту">
+        <button type="submit">Найти</button>
+    </form>
     <div class="judges-grid">
-        {% for judge in judges %}
+        {% for judge in page_obj %}
             <div class="judge-card">
                 <h4>{{ judge.full_name }}</h4>
                 <p><strong>Форумный аккаунт:</strong> {{ judge.forum_account }}</p>
@@ -22,13 +26,22 @@
                     {% endfor %}
                 </div>
                 <div class="actions">
-                    <a href="{% url 'judge_edit' judge.id %}" class="button-link">Редактировать</a>
-                    <a href="{% url 'judge_delete' judge.id %}" class="button-link">Удалить</a>
+                    <a href="{% url 'judges:judge_edit' judge.id %}" class="button-link">Редактировать</a>
+                    <a href="{% url 'judges:judge_delete' judge.id %}" class="button-link">Удалить</a>
                 </div>
             </div>
         {% empty %}
             <p>Нет судей в базе</p>
         {% endfor %}
     </div>
-    <p><a href="{% url 'stats' %}" class="button-link">Назад к статистике</a></p>
+    <div class="pagination">
+        {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}{% if query %}&q={{ query }}{% endif %}">Предыдущая</a>
+        {% endif %}
+        <span>Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}</span>
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}{% if query %}&q={{ query }}{% endif %}">Следующая</a>
+        {% endif %}
+    </div>
+    <p><a href="{% url 'web:stats' %}" class="button-link">Назад к статистике</a></p>
 {% endblock %}

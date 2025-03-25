@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
+from django.db.models import Count
 from web.models import ForumThread, ParseProgress
 from parser.utils import run_parser_in_background
 
@@ -9,8 +10,8 @@ def index(request):
 
 def stats(request):
     print("Rendering stats page")
-    threads = ForumThread.objects.all().order_by('-created_at')  # Сортировка по убыванию created_at
-    total_messages = sum(thread.messages.count() for thread in threads)
+    threads = ForumThread.objects.annotate(message_count=Count('messages')).order_by('-created_at')
+    total_messages = sum(t.message_count for t in threads)
     print(f"Found {threads.count()} threads, total messages: {total_messages}")
     return render(request, 'stats.html', {'threads': threads, 'total_messages': total_messages})
 
@@ -19,7 +20,7 @@ def trigger_parse(request):
         print("Triggering parse via POST request")
         max_pages = int(request.POST.get('max_pages', 1))
         run_parser_in_background(max_pages=max_pages)
-        return redirect('progress')
+        return redirect('web:progress')
     print("Invalid request method for trigger_parse")
     return HttpResponse(status=405)
 

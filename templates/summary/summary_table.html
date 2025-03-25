@@ -50,7 +50,7 @@
 
             <a href="?urgent=1" class="urgent-button {% if urgent_filter %}active{% endif %}">Срочное</a>
             <button type="submit" class="urgent-button apply-filters">Применить фильтры</button>
-            <a href="{% url 'summary_table' %}" class="reset-button">Сбросить фильтры</a>
+            <a href="{% url 'summary:summary_table' %}" class="reset-button">Сбросить фильтры</a>
         </form>
     </div>
 

@@ -1,9 +1,13 @@
 from django.db import models
+from django.core.validators import RegexValidator
 
 class Judge(models.Model):
     full_name = models.CharField(max_length=255, verbose_name="ФИО")
     forum_account = models.CharField(max_length=100, verbose_name="Форумный аккаунт")
-    discord_id = models.CharField(max_length=100, blank=True, verbose_name="ID Discord")
+    discord_id = models.CharField(
+        max_length=18, blank=True, verbose_name="ID Discord",
+        validators=[RegexValidator(r'^\d{17,18}$', 'Неверный формат ID Discord')]
+    )
     telegram = models.CharField(max_length=100, blank=True, verbose_name="Telegram")
     email = models.EmailField(blank=True, verbose_name="Почта")
     additional_info = models.TextField(blank=True, verbose_name="Дополнительно")
@@ -14,6 +18,9 @@ class Judge(models.Model):
     class Meta:
         verbose_name = "Судья"
         verbose_name_plural = "Судьи"
+        indexes = [
+            models.Index(fields=['forum_account']),
+        ]
 
 class EmploymentHistory(models.Model):
     judge = models.ForeignKey(Judge, related_name='employment_history', on_delete=models.CASCADE, verbose_name="Судья")

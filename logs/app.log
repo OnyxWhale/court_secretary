@@ -1,0 +1,274 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1251
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /stats/ HTTP/1.1" 200 818
+"GET /summary/ HTTP/1.1" 200 6291
+"GET /judges/ HTTP/1.1" 200 1285
+"GET /progress/ HTTP/1.1" 200 793
+"GET / HTTP/1.1" 200 1251
+"GET /summary/ HTTP/1.1" 200 6291
+"GET / HTTP/1.1" 200 1251
+"POST /parse/ HTTP/1.1" 302 0
+"GET /progress/ HTTP/1.1" 200 1039
+"GET /progress/ HTTP/1.1" 200 1055
+"GET /progress/ HTTP/1.1" 200 1045
+"GET /progress/ HTTP/1.1" 200 1045
+"GET /progress/ HTTP/1.1" 200 1045
+"GET /summary/ HTTP/1.1" 200 37150
+"GET /stats/ HTTP/1.1" 200 7784
+"GET /judges/ HTTP/1.1" 200 1285
+"GET /summary/ HTTP/1.1" 200 37150
+"GET /judges/ HTTP/1.1" 200 1285
+"GET /judges/add/ HTTP/1.1" 200 6568
+"POST /judges/add/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2273
+Internal Server Error: /judges/edit/1/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/app/judges/views.py", line 75, in judge_edit
+    return render(request, 'judges/judge_manage.html', {'form': form, 'formset': formset, 'judge': judge})
+  File "/usr/local/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.13/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python3.13/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'judge_delete' not found. 'judge_delete' is not a valid view function or pattern name.
+"GET /judges/edit/1/ HTTP/1.1" 500 162252
+/app/judges/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1251
+"GET /summary/ HTTP/1.1" 200 6291
+"GET /stats/ HTTP/1.1" 200 818
+"GET /judges/ HTTP/1.1" 200 1285
+"GET /judges/add/ HTTP/1.1" 200 7078
+"POST /judges/add/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /judges/edit/1/ HTTP/1.1" 200 10906
+"GET /stats/ HTTP/1.1" 200 818
+"GET / HTTP/1.1" 200 1251
+"GET /stats/ HTTP/1.1" 200 818
+"GET /summary/ HTTP/1.1" 200 6291
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /progress/ HTTP/1.1" 200 793
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /summary/ HTTP/1.1" 200 6291
+"GET /summary/ HTTP/1.1" 200 6291
+"GET /stats/ HTTP/1.1" 200 818
+"GET / HTTP/1.1" 200 1251
+"GET /summary/ HTTP/1.1" 200 6291
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /judges/delete/1/ HTTP/1.1" 200 1065
+"POST /judges/delete/1/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 1285
+"GET /judges/add/ HTTP/1.1" 200 7078
+"POST /judges/add/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /judges/edit/2/ HTTP/1.1" 200 10906
+"POST /judges/edit/2/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /judges/edit/2/ HTTP/1.1" 200 10906
+"POST /judges/edit/2/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2168
+"GET /judges/edit/2/ HTTP/1.1" 200 7648
+"POST /judges/edit/2/ HTTP/1.1" 302 0
+"GET /judges/edit/2/ HTTP/1.1" 200 7648
+"POST /judges/edit/2/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2168
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /judges/edit/2/ HTTP/1.1" 200 7648
+"POST /judges/edit/2/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2168
+"GET /judges/edit/2/ HTTP/1.1" 200 7648
+"POST /judges/edit/2/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /judges/edit/2/ HTTP/1.1" 200 10906
+Watching for file changes with StatReloader
+"GET /summary/ HTTP/1.1" 200 6291
+Internal Server Error: /judges/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/app/judges/views.py", line 12, in judges_list
+    Q(full_name__icontains=query) | Q(forum_account__icontains=query)
+    ^
+NameError: name 'Q' is not defined
+"GET /judges/ HTTP/1.1" 500 58492
+Internal Server Error: /judges/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/app/judges/views.py", line 12, in judges_list
+    Q(full_name__icontains=query) | Q(forum_account__icontains=query)
+    ^
+NameError: name 'Q' is not defined
+"GET /judges/ HTTP/1.1" 500 58629
+Internal Server Error: /judges/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/app/judges/views.py", line 12, in judges_list
+    Q(full_name__icontains=query) | Q(forum_account__icontains=query)
+    ^
+NameError: name 'Q' is not defined
+"GET /judges/ HTTP/1.1" 500 58629
+/app/judges/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /summary/ HTTP/1.1" 200 6291
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /judges/edit/2/ HTTP/1.1" 200 10536
+"GET /judges/edit/2/ HTTP/1.1" 200 10536
+"POST /judges/edit/2/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /judges/edit/2/ HTTP/1.1" 200 10536
+"POST /judges/edit/2/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2168
+"GET /judges/edit/2/ HTTP/1.1" 200 7118
+"POST /judges/edit/2/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /judges/edit/2/ HTTP/1.1" 200 10536
+Watching for file changes with StatReloader
+"GET /judges/edit/2/ HTTP/1.1" 200 11994
+"GET /static/css/styles.css HTTP/1.1" 200 20021
+"GET /judges/edit/2/ HTTP/1.1" 200 11994
+"GET /judges/edit/2/ HTTP/1.1" 200 11994
+"GET /static/css/styles.css HTTP/1.1" 304 0
+/app/judges/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /judges/edit/2/ HTTP/1.1" 200 11171
+"GET /static/css/styles.css HTTP/1.1" 200 20179
+"GET /judges/edit/2/ HTTP/1.1" 200 11171
+"GET /judges/edit/2/ HTTP/1.1" 200 11171
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /judges/edit/2/ HTTP/1.1" 200 11171
+"POST /judges/edit/2/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /judges/edit/2/ HTTP/1.1" 200 11171
+Internal Server Error: /judges/history/delete/4/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/usr/local/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/app/judges/views.py", line 78, in employment_history_delete
+    next_url = request.POST.get('next', redirect('judges:judge_edit', args=[history.judge.id]))
+                                        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/usr/local/lib/python3.13/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'judge_edit' with keyword arguments '{'args': [2]}' not found. 1 pattern(s) tried: ['judges/edit/(?P<judge_id>[0-9]+)/\\Z']
+"POST /judges/history/delete/4/ HTTP/1.1" 500 92298
+/app/judges/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/judges/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /judges/edit/2/ HTTP/1.1" 200 8757
+"GET /static/css/styles.css HTTP/1.1" 200 20179
+"GET /judges/edit/2/ HTTP/1.1" 200 8757
+"GET /summary/ HTTP/1.1" 200 6291
+"GET /judges/ HTTP/1.1" 200 2168
+"GET /judges/edit/2/ HTTP/1.1" 200 8757
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"POST /judges/edit/2/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2208
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /judges/edit/2/ HTTP/1.1" 200 11535
+"POST /judges/history/delete/5/ HTTP/1.1" 302 0
+"GET /judges/edit/2/ HTTP/1.1" 200 8757
+"GET /summary/ HTTP/1.1" 200 6291
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 1251
+"POST /parse/ HTTP/1.1" 302 0
+"GET /progress/ HTTP/1.1" 200 1039
+"GET /progress/ HTTP/1.1" 200 1055
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /progress/ HTTP/1.1" 200 1045
+"GET /summary/ HTTP/1.1" 200 37217
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /judges/ HTTP/1.1" 200 2168
+"GET /judges/edit/2/ HTTP/1.1" 200 8757
+"POST /judges/edit/2/ HTTP/1.1" 302 0
+"GET /judges/ HTTP/1.1" 200 2168
+"GET /static/css/styles.css HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET /judges/ HTTP/1.1" 200 2168
+"GET /static/css/styles.css HTTP/1.1" 304 0

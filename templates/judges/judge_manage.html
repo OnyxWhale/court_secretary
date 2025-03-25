@@ -2,52 +2,55 @@
 {% load static %}
 
 {% block content %}
+    <h2>{% if judge %}Редактировать судью{% else %}Добавить судью{% endif %}</h2>
     <div class="judge-manage-container">
-        <h2>{% if judge %}Редактировать судью{% else %}Добавить судью{% endif %}</h2>
-        <form method="post" class="judge-form">
+        <form method="post" class="judge-form" id="judge-form" onsubmit="return validateDates();">
             {% csrf_token %}
-            
-            <!-- Контейнер для боксов -->
             <div class="judge-form-boxes">
-                <!-- Бокс 1: Основная информация -->
-                <div class="form-box general-info">
-                    <h3>Общая информация</h3>
+                <!-- Основная информация -->
+                <div class="form-box">
+                    <h3>Основная информация</h3>
                     <div class="form-group">
                         {% for field in form %}
                             <div class="form-field">
                                 <label for="{{ field.id_for_label }}">{{ field.label }}</label>
                                 {{ field }}
+                                {% if field.errors %}
+                                    <span class="error">{{ field.errors }}</span>
+                                {% endif %}
                             </div>
                         {% endfor %}
                     </div>
                 </div>
 
-                <!-- Бокс 2: История приёма/увольнения -->
-                <div class="form-box employment-history">
+                <!-- История приёма/увольнения -->
+                <div class="form-box">
                     <h3>История приёма/увольнения</h3>
-                    <div class="history-list">
-                        {{ formset.management_form }}
-                        {% for form in formset %}
-                            <div class="history-item">
-                                <div class="history-fields">
-                                    {% for field in form %}
-                                        {% if field.label != "Id" %}
-                                            {% if field.label == "Delete" %}
-                                                <div class="form-field delete-checkbox">
-                                                    <label for="{{ field.id_for_label }}">Удалить</label>
-                                                    {{ field }}
-                                                </div>
-                                            {% else %}
+                    <div class="form-group">
+                        <div class="history-list">
+                            {{ formset.management_form }}
+                            {% for form in formset %}
+                                <div class="history-item">
+                                    <div class="history-fields">
+                                        {% for field in form %}
+                                            {% if field.name != "DELETE" %}
                                                 <div class="form-field">
-                                                    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                                    <label for="{{ field.id_for_label }}"></label>
                                                     {{ field }}
+                                                    {% if field.errors %}
+                                                        <span class="error">{{ field.errors }}</span>
+                                                    {% endif %}
                                                 </div>
                                             {% endif %}
-                                        {% endif %}
-                                    {% endfor %}
+                                        {% endfor %}
+                                    </div>
+                                    <div class="delete-box">
+                                        <input type="checkbox" name="{{ form.DELETE.name }}" id="{{ form.DELETE.id_for_label }}" class="hidden-checkbox" {% if form.DELETE.value %}checked{% endif %}>
+                                        <button type="button" class="delete-button small delete-history-btn" onclick="handleDelete(this, '{{ form.DELETE.id_for_label }}', {% if form.instance.pk %}'{% url 'judges:employment_history_delete' form.instance.pk %}'{% else %}null{% endif %}, '{% if judge %}{% url 'judges:judge_edit' judge.id %}{% else %}{% url 'judges:judges_list' %}{% endif %}');">Удалить</button>
+                                    </div>
                                 </div>
-                            </div>
-                        {% endfor %}
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,9 +58,8 @@
             <!-- Кнопки действий -->
             <div class="form-actions">
                 <button type="submit" class="save-button">Сохранить</button>
-                <button type="submit" name="delete_selected" value="true" class="delete-button" onclick="return confirm('Вы уверены, что хотите удалить выбранные записи?');">Удалить выбранные</button>
                 {% if judge %}
-                    <form method="post" action="{% url 'judge_delete' judge.id %}" onsubmit="return confirm('Вы уверены, что хотите удалить судью?');" class="delete-judge-form">
+                    <form method="post" action="{% url 'judges:judge_delete' judge.id %}" onsubmit="return confirm('Вы уверены, что хотите удалить судью?');" class="delete-judge-form">
                         {% csrf_token %}
                         <button type="submit" class="delete-button">Удалить судью</button>
                     </form>
@@ -65,4 +67,52 @@
             </div>
         </form>
     </div>
+
+    <script>
+        // Установка минимальной даты (14 августа 2024)
+        const minDate = '2024-08-14';
+        document.querySelectorAll('input[type="date"]').forEach(input => {
+            input.setAttribute('min', minDate);
+        });
+
+        // Валидация дат перед отправкой формы
+        function validateDates() {
+            const historyItems = document.querySelectorAll('.history-item');
+            for (let item of historyItems) {
+                const hireDateInput = item.querySelector('input[name$="hire_date"]');
+                const dismissalDateInput = item.querySelector('input[name$="dismissal_date"]');
+                if (hireDateInput && dismissalDateInput) {
+                    const hireDate = hireDateInput.value;
+                    const dismissalDate = dismissalDateInput.value;
+                    if (hireDate && dismissalDate && new Date(dismissalDate) < new Date(hireDate)) {
+                        alert('Дата увольнения не может быть раньше даты приёма на работу.');
+                        return false;
+                    }
+                    if (hireDate && new Date(hireDate) < new Date(minDate)) {
+                        alert('Дата приёма не может быть раньше 14 августа 2024 года.');
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        // Обработка удаления
+        function handleDelete(button, checkboxId, deleteUrl, nextUrl) {
+            const checkbox = document.getElementById(checkboxId);
+            if (confirm('Удалить эту запись?')) {
+                if (deleteUrl) {
+                    const form = document.createElement('form');
+                    form.method = 'POST';
+                    form.action = deleteUrl;
+                    const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+                    form.innerHTML = `<input type="hidden" name="csrfmiddlewaretoken" value="${csrfToken}"><input type="hidden" name="next" value="${nextUrl}">`;
+                    document.body.appendChild(form);
+                    form.submit();
+                } else {
+                    checkbox.checked = !checkbox.checked;
+                }
+            }
+        }
+    </script>
 {% endblock %}

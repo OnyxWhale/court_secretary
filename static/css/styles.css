@@ -834,3 +834,80 @@ form textarea:-webkit-autofill:focus {
     height: 16px;
     accent-color: #FF3333;
 }
+
+/* Существующие стили остаются без изменений, добавляем новый блок */
+.delete-box {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: #3C3C3C;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-left: 1em;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    background-color: #3C3C3C;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #4A4A4A;
+}
+
+.history-fields {
+    display: flex;
+    gap: 1em;
+    flex: 1;
+}
+
+.hidden-checkbox {
+    display: none; /* Скрываем чекбокс */
+}
+
+.delete-box {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: #3C3C3C;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-left: 1em;
+}
+
+.delete-history-form.hidden {
+    display: none; /* Скрываем форму для отправки */
+}
+
+.hidden-checkbox {
+    display: none; /* Скрываем чекбокс */
+}
+
+.delete-box {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: #3C3C3C;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-left: 1em;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    background-color: #3C3C3C;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #4A4A4A;
+}
+
+.history-fields {
+    display: flex;
+    gap: 1em;
+    flex: 1;
+}
