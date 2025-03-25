@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>Welcome to Court Secretary</h2>
+    <p>Navigate to <a href="{% url 'stats' %}" class="button-link">Statistics</a> to view forum data.</p>
+    <form action="{% url 'trigger_parse' %}" method="post">
+        {% csrf_token %}
+        <label for="max_pages">Number of pages to parse:</label>
+        <input type="number" id="max_pages" name="max_pages" min="1" value="1" required>
+        <button type="submit">Trigger Parse</button>
+    </form>
+    <p>Check <a href="{% url 'progress' %}" class="button-link">Parsing Progress</a>.</p>
+{% endblock %}

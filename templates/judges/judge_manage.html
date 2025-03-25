@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="judge-manage-container">
+        <h2>{% if judge %}Редактировать судью{% else %}Добавить судью{% endif %}</h2>
+        <form method="post" class="judge-form">
+            {% csrf_token %}
+            
+            <!-- Контейнер для боксов -->
+            <div class="judge-form-boxes">
+                <!-- Бокс 1: Основная информация -->
+                <div class="form-box general-info">
+                    <h3>Общая информация</h3>
+                    <div class="form-group">
+                        {% for field in form %}
+                            <div class="form-field">
+                                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                {{ field }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Бокс 2: История приёма/увольнения -->
+                <div class="form-box employment-history">
+                    <h3>История приёма/увольнения</h3>
+                    <div class="history-list">
+                        {{ formset.management_form }}
+                        {% for form in formset %}
+                            <div class="history-item">
+                                <div class="history-fields">
+                                    {% for field in form %}
+                                        {% if field.label != "Id" %}
+                                            {% if field.label == "Delete" %}
+                                                <div class="form-field delete-checkbox">
+                                                    <label for="{{ field.id_for_label }}">Удалить</label>
+                                                    {{ field }}
+                                                </div>
+                                            {% else %}
+                                                <div class="form-field">
+                                                    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                                    {{ field }}
+                                                </div>
+                                            {% endif %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Кнопки действий -->
+            <div class="form-actions">
+                <button type="submit" class="save-button">Сохранить</button>
+                <button type="submit" name="delete_selected" value="true" class="delete-button" onclick="return confirm('Вы уверены, что хотите удалить выбранные записи?');">Удалить выбранные</button>
+                {% if judge %}
+                    <form method="post" action="{% url 'judge_delete' judge.id %}" onsubmit="return confirm('Вы уверены, что хотите удалить судью?');" class="delete-judge-form">
+                        {% csrf_token %}
+                        <button type="submit" class="delete-button">Удалить судью</button>
+                    </form>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+{% endblock %}

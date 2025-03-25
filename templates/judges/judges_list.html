@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>Список судей</h2>
+    <p><a href="{% url 'judge_add' %}" class="button-link">Добавить судью</a></p>
+    <div class="judges-grid">
+        {% for judge in judges %}
+            <div class="judge-card">
+                <h4>{{ judge.full_name }}</h4>
+                <p><strong>Форумный аккаунт:</strong> {{ judge.forum_account }}</p>
+                <p><strong>ID Discord:</strong> {{ judge.discord_id|default:"—" }}</p>
+                <p><strong>Telegram:</strong> {{ judge.telegram|default:"—" }}</p>
+                <p><strong>Почта:</strong> {{ judge.email|default:"—" }}</p>
+                <p><strong>Дополнительно:</strong> {{ judge.additional_info|default:"—" }}</p>
+                <p><strong>История приёма/увольнения:</strong></p>
+                <div class="history-list">
+                    {% for history in judge.employment_history.all %}
+                        <p>Принят: {{ history.hire_date }} | Уволен: {{ history.dismissal_date|default:"—" }}</p>
+                    {% empty %}
+                        <p>Нет данных</p>
+                    {% endfor %}
+                </div>
+                <div class="actions">
+                    <a href="{% url 'judge_edit' judge.id %}" class="button-link">Редактировать</a>
+                    <a href="{% url 'judge_delete' judge.id %}" class="button-link">Удалить</a>
+                </div>
+            </div>
+        {% empty %}
+            <p>Нет судей в базе</p>
+        {% endfor %}
+    </div>
+    <p><a href="{% url 'stats' %}" class="button-link">Назад к статистике</a></p>
+{% endblock %}

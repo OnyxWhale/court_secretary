@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>{{ thread.title }}</h2>
+    <p>Prefix: {{ thread.prefix|default:"None" }}</p>
+    <p>Created: {{ thread.created_at|date:"Y-m-d H:i" }}</p>
+    <p><a href="{{ thread.url }}" target="_blank" class="button-link">View on Forum</a></p>
+    <h3>Messages ({{ messages.count }})</h3>
+    <div class="messages-grid">
+        {% for message in messages %}
+            <div class="message-card">
+                <p><strong>{{ message.author }}</strong></p>
+                <p>{{ message.posted_at|date:"Y-m-d H:i" }}</p>
+                <div class="message-content">{{ message.content }}</div>
+                <p><a href="{{ message.url }}" target="_blank" class="button-link">View on Forum</a></p>
+            </div>
+        {% empty %}
+            <p>No messages available for this thread.</p>
+        {% endfor %}
+    </div>
+    <p><a href="{% url 'stats' %}" class="button-link">Back to Statistics</a></p>
+{% endblock %}

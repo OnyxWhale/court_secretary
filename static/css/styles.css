@@ -1,0 +1,836 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+    color: #D4D4D4;
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    background-color: #252526;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid #3C3C3C;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #FF9900;
+}
+
+/* Навигация */
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #FF9900;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFAD33;
+}
+
+/* Основной контент */
+main {
+    padding: 2em;
+}
+
+/* Заголовки */
+h2, h3 {
+    color: #FF9900;
+    margin-bottom: 0.5em;
+}
+
+/* Контейнер для формы редактирования судьи */
+.judge-manage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* Стили для формы */
+.judge-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* Контейнер для боксов */
+.judge-form-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+/* Бокс формы */
+.form-box {
+    background-color: #252526;
+    padding: 1.5em;
+    border-radius: 8px;
+    border: 1px solid #3C3C3C;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Группа полей */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/* Поле формы */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.form-field label {
+    color: #FF9900;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea {
+    padding: 0.6em;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    background-color: #1A1A1A;
+    color: #D4D4D4;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-field input[type="text"]:focus,
+.form-field input[type="email"]:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: #FF9900;
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.3);
+}
+
+.form-field textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Стили для полей дат */
+.form-field input[type="date"] {
+    padding: 0.6em;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    background-color: #1A1A1A;
+    color: #D4D4D4;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-field input[type="date"]:focus {
+    outline: none;
+    border-color: #FF9900;
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.3);
+}
+
+/* Убираем белый фон при автозаполнении */
+form input:-webkit-autofill,
+form input:-webkit-autofill:hover,
+form input:-webkit-autofill:focus,
+form textarea:-webkit-autofill,
+form textarea:-webkit-autofill:hover,
+form textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #1A1A1A inset !important;
+    -webkit-text-fill-color: #D4D4D4 !important;
+}
+
+/* Список истории приёма/увольнения */
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: #3C3C3C;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #4A4A4A;
+}
+
+.history-fields {
+    display: flex;
+    gap: 1em;
+    flex: 1;
+}
+
+/* Кнопки действий */
+.form-actions {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+}
+
+.save-button {
+    padding: 0.7em 1.5em;
+    background: linear-gradient(135deg, #FF9900, #FFAD33);
+    color: #1A1A1A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.save-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 153, 0, 0.3);
+}
+
+.delete-button {
+    padding: 0.7em 1.5em;
+    background: linear-gradient(135deg, #FF3333, #FF6666);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.delete-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 51, 51, 0.3);
+}
+
+.delete-button.small {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+}
+
+/* Адаптивность */
+@media (max-width: 900px) {
+    .judge-form-boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .judge-manage-container {
+        padding: 1em;
+    }
+
+    .history-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .history-fields {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-field input[type="date"] {
+        width: 100%;
+    }
+
+    .delete-history-form {
+        margin-top: 0.5em;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .save-button, .delete-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Сетка для карточек тем (7 в ряд) */
+.threads-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1.5em;
+    padding: 0;
+}
+
+/* Карточки тем */
+.thread-card {
+    background-color: #252526;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #D4D4D4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: block;
+}
+
+.thread-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(255, 153, 0, 0.2);
+    background-color: #3C3C3C;
+}
+
+.thread-card h4 {
+    margin: 0 0 0.5em;
+    font-size: 1.1em;
+    color: #FF9900;
+    transition: color 0.3s ease;
+}
+
+.thread-card:hover h4 {
+    color: #FFAD33;
+}
+
+.thread-card p {
+    margin: 0.3em 0;
+    font-size: 0.9em;
+    color: #A3A3A3;
+}
+
+/* Сетка для сообщений (2 в строке) */
+.messages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 0;
+}
+
+/* Карточки сообщений */
+.message-card {
+    background-color: #252526;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: left;
+    color: #D4D4D4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.message-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(255, 153, 0, 0.2);
+    background-color: #3C3C3C;
+}
+
+.message-card p {
+    margin: 0.3em 0;
+    color: #A3A3A3;
+}
+
+.message-card strong {
+    color: #FF9900;
+}
+
+.message-card .message-content {
+    background-color: #3C3C3C;
+    padding: 0.8em;
+    border-radius: 5px;
+    margin: 0.5em 0;
+    color: #D4D4D4;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+.message-card a {
+    color: #FF9900;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.message-card a:hover {
+    color: #FFAD33;
+}
+
+/* Адаптивность для карточек тем */
+@media (max-width: 1400px) {
+    .threads-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .threads-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .threads-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .threads-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .threads-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .threads-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Адаптивность для сообщений */
+@media (max-width: 600px) {
+    .messages-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Сетка для карточек судей (3 в ряд) */
+.judges-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    padding: 0;
+}
+
+/* Карточки судей */
+.judge-card {
+    background-color: #252526;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: left;
+    color: #D4D4D4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.judge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(255, 153, 0, 0.2);
+    background-color: #3C3C3C;
+}
+
+.judge-card h4 {
+    margin: 0 0 0.5em;
+    font-size: 1.2em;
+    color: #FF9900;
+}
+
+.judge-card p {
+    margin: 0.3em 0;
+    font-size: 0.9em;
+    color: #A3A3A3;
+}
+
+.judge-card strong {
+    color: #D4D4D4;
+}
+
+.judge-card .history-list {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    background-color: #3C3C3C;
+    border-radius: 5px;
+}
+
+.judge-card .actions {
+    margin-top: 1em;
+    display: flex;
+    gap: 0.5em;
+}
+
+/* Адаптивность для карточек судей */
+@media (max-width: 1000px) {
+    .judges-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .judges-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Сводная таблица */
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    background-color: #252526;
+    color: #D4D4D4;
+}
+
+.summary-table th, .summary-table td {
+    padding: 0.8em;
+    border: 1px solid #3C3C3C;
+    text-align: left;
+}
+
+.summary-table th {
+    background-color: #3C3C3C;
+    color: #FF9900;
+    font-weight: bold;
+}
+
+.summary-table tr:nth-child(even) {
+    background-color: #2D2D2D;
+}
+
+.summary-table a {
+    color: #FF9900;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.summary-table a:hover {
+    color: #FFAD33;
+}
+
+/* Убираем обводку текста для всех ячеек */
+.summary-table span.cell-highlight {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: #D4D4D4;
+}
+
+.summary-table span.cell-highlight a {
+    color: #FF9900;
+    text-decoration: none;
+}
+
+.summary-table span.cell-highlight a:hover {
+    color: #FFAD33;
+}
+
+/* Индикация для "Первый судебный акт" (Время до первого сообщения судьи) */
+.summary-table td.first-very-weak-indication {
+    background-color: #D0FF0020;
+}
+
+.summary-table td.first-less-weak-indication {
+    background-color: #F2FF0040;
+}
+
+.summary-table td.first-weak-indication {
+    background-color: #FFC10060;
+}
+
+.summary-table td.first-less-medium-indication {
+    background-color: #FF9A0080;
+}
+
+.summary-table td.first-medium-indication {
+    background-color: #FF7400A0;
+}
+
+.summary-table td.first-strong-indication {
+    background-color: #FF4D00C0;
+}
+
+.summary-table td.first-very-strong-indication {
+    background-color: #FF0000;
+}
+
+/* Добавляем фоновую обводку текста для "Первый судебный акт" */
+.summary-table td.first-very-weak-indication span,
+.summary-table td.first-less-weak-indication span,
+.summary-table td.first-weak-indication span,
+.summary-table td.first-less-medium-indication span,
+.summary-table td.first-medium-indication span,
+.summary-table td.first-strong-indication span,
+.summary-table td.first-very-strong-indication span {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #D4D4D4;
+}
+
+/* Индикация для "Время судопроизводства" */
+.summary-table td.trial-very-weak-indication {
+    background-color: #D0FF0020;
+}
+
+.summary-table td.trial-less-weak-indication {
+    background-color: #F2FF0040;
+}
+
+.summary-table td.trial-weak-indication {
+    background-color: #FFC10060;
+}
+
+.summary-table td.trial-less-medium-indication {
+    background-color: #FF9A0080;
+}
+
+.summary-table td.trial-medium-indication {
+    background-color: #FF7400A0;
+}
+
+.summary-table td.trial-strong-indication {
+    background-color: #FF4D00C0;
+}
+
+.summary-table td.trial-very-strong-indication {
+    background-color: #FF0000;
+}
+
+/* Добавляем фоновую обводку текста для "Время судопроизводства" */
+.summary-table td.trial-very-weak-indication span,
+.summary-table td.trial-less-weak-indication span,
+.summary-table td.trial-weak-indication span,
+.summary-table td.trial-less-medium-indication span,
+.summary-table td.trial-medium-indication span,
+.summary-table td.trial-strong-indication span,
+.summary-table td.trial-very-strong-indication span {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #D4D4D4;
+}
+
+/* Отключаем фоновую индикацию и обводку для "рассмотрено", "отказано" и "На рассмотрении" */
+.summary-table td.indication-off {
+    background-color: transparent !important;
+}
+
+.summary-table td.indication-off span {
+    background-color: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+/* Подсвечиваем текст цветом индикатора и делаем жирным для "Первый судебный акт" */
+.summary-table td.first-very-weak-indication.indication-off span {
+    color: #D0FF00;
+    font-weight: bold;
+}
+
+.summary-table td.first-less-weak-indication.indication-off span {
+    color: #F2FF00;
+    font-weight: bold;
+}
+
+.summary-table td.first-weak-indication.indication-off span {
+    color: #FFC100;
+    font-weight: bold;
+}
+
+.summary-table td.first-less-medium-indication.indication-off span {
+    color: #FF9A00;
+    font-weight: bold;
+}
+
+.summary-table td.first-medium-indication.indication-off span {
+    color: #FF7400;
+    font-weight: bold;
+}
+
+.summary-table td.first-strong-indication.indication-off span {
+    color: #FF4D00;
+    font-weight: bold;
+}
+
+.summary-table td.first-very-strong-indication.indication-off span {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+/* Подсвечиваем текст цветом индикатора и делаем жирным для "Время судопроизводства" */
+.summary-table td.trial-very-weak-indication.indication-off span {
+    color: #D0FF00;
+    font-weight: bold;
+}
+
+.summary-table td.trial-less-weak-indication.indication-off span {
+    color: #F2FF00;
+    font-weight: bold;
+}
+
+.summary-table td.trial-weak-indication.indication-off span {
+    color: #FFC100;
+    font-weight: bold;
+}
+
+.summary-table td.trial-less-medium-indication.indication-off span {
+    color: #FF9A00;
+    font-weight: bold;
+}
+
+.summary-table td.trial-medium-indication.indication-off span {
+    color: #FF7400;
+    font-weight: bold;
+}
+
+.summary-table td.trial-strong-indication.indication-off span {
+    color: #FF4D00;
+    font-weight: bold;
+}
+
+.summary-table td.trial-very-strong-indication.indication-off span {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+/* Форма фильтрации */
+.filter-form {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    background-color: #252526;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.filter-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.filter-group label {
+    color: #FF9900;
+    font-weight: bold;
+}
+
+.filter-group select,
+.filter-group input[type="text"] {
+    padding: 0.5em;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    background-color: #3C3C3C;
+    color: #D4D4D4;
+    font-size: 0.9em;
+    width: 150px;
+}
+
+.filter-group select:focus,
+.filter-group input[type="text"]:focus {
+    outline: none;
+    border-color: #FF9900;
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.5);
+}
+
+/* Кнопки фильтрации */
+.urgent-button,
+.reset-button {
+    padding: 0.5em 1em;
+    background-color: #3C3C3C;
+    border: 1px solid #FF9900;
+    border-radius: 5px;
+    color: #FF9900;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.urgent-button:hover,
+.reset-button:hover {
+    background-color: #FF9900;
+    color: #1A1A1A;
+}
+
+.urgent-button.active {
+    background-color: #FF9900;
+    color: #1A1A1A;
+}
+
+/* Увеличенная кнопка "Применить фильтры" */
+.urgent-button.apply-filters {
+    padding: 0.7em 1.5em;
+    font-size: 1.1em;
+}
+
+.filter-form > a,
+.filter-form > button {
+    margin-left: auto;
+}
+
+/* Адаптивность для формы */
+@media (max-width: 600px) {
+    .filter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group select,
+    .filter-group input[type="text"] {
+        width: 100%;
+    }
+
+    .filter-form > a,
+    .filter-form > button {
+        margin-left: 0;
+        margin-top: 0.5em;
+    }
+}
+
+/* Ссылка "Назад к статистике" */
+.button-link {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #3C3C3C;
+    border: 1px solid #FF9900;
+    border-radius: 5px;
+    color: #FF9900;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #FF9900;
+    color: #1A1A1A;
+}
+
+.delete-history-btn {
+    transition: opacity 0.3s ease;
+}
+
+.delete-history-btn:hover {
+    opacity: 0.8;
+}
+
+.delete-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.delete-checkbox label {
+    color: #FF3333;
+}
+
+.delete-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #FF3333;
+}

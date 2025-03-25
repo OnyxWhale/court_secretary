@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>Parsing Progress</h2>
+    {% if progress %}
+        <p>Status: {{ progress.status }}</p>
+        <p>Progress: {{ progress.progress }}%</p>
+        <p>Total Threads: {{ progress.total_threads }}</p>
+        <p>Processed Threads: {{ progress.processed_threads }}</p>
+        <p>Started At: {{ progress.started_at }}</p>
+        <p>Last Updated: {{ progress.updated_at }}</p>
+        <meta http-equiv="refresh" content="5">
+    {% else %}
+        <p>No parsing in progress.</p>
+    {% endif %}
+    <a href="{% url 'stats' %}" class="button-link">Go to Statistics</a>
+{% endblock %}
