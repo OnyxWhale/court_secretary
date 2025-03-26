@@ -2027,3 +2027,27 @@ Traceback (most recent call last):
 django.core.exceptions.ValidationError: ['One of clocked, interval, crontab, or solar must be set.']
 "POST /parse/ HTTP/1.1" 500 94794
 Watching for file changes with StatReloader
+"GET /parse/ HTTP/1.1" 200 3318
+"GET /parse/ HTTP/1.1" 200 3318
+"GET /parse/ HTTP/1.1" 200 3318
+"POST /parse/ HTTP/1.1" 302 0
+"GET /parse/ HTTP/1.1" 200 3322
+"POST /parse/ HTTP/1.1" 302 0
+"GET /parse/ HTTP/1.1" 200 3851
+"GET /parse/ HTTP/1.1" 200 3851
+"GET /static/css/styles.css HTTP/1.1" 200 21033
+"GET /parse/ HTTP/1.1" 200 3851
+"GET /parse/ HTTP/1.1" 200 3851
+"GET /parse/ HTTP/1.1" 200 3851
+"GET /parse/ HTTP/1.1" 200 3851
+"GET /parse/ HTTP/1.1" 200 3851
+"GET /parse/ HTTP/1.1" 200 3851
+"GET /parse/ HTTP/1.1" 200 3851
+"GET /static/css/styles.css HTTP/1.1" 200 21033
+"GET /parse/ HTTP/1.1" 200 3423
+"GET /static/css/styles.css HTTP/1.1" 200 21034
+"GET /parse/ HTTP/1.1" 200 3423
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /parse/ HTTP/1.1" 200 3423
+"GET /parse/ HTTP/1.1" 200 3403
+"GET /static/css/styles.css HTTP/1.1" 304 0

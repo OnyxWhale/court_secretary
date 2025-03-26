@@ -5,57 +5,59 @@
 
 {% block content %}
 <div class="parse-container">
-    <!-- Первый бокс: Текущий функционал -->
-    <div class="parse-block">
-        <h2>Ручной запуск парсинга</h2>
+    <!-- Первый бокс: Ручной запуск парсинга -->
+    <div class="parse-block parse-card">
+        <h2 class="card-title">Ручной запуск парсинга</h2>
         <form method="post" class="parse-form">
             {% csrf_token %}
             <input type="hidden" name="action" value="start_parse">
-            <label for="max_pages">Количество страниц:</label>
-            <input type="number" id="max_pages" name="max_pages" value="1" min="1" required>
-            <button type="submit" class="parse-button">Запустить парсинг</button>
+            <div class="form-group centered">
+                <label for="max_pages">Количество страниц:</label>
+                <input type="number" id="max_pages" name="max_pages" value="1" min="1" required class="input-field">
+            </div>
+            <button type="submit" class="btn btn-primary">Запустить парсинг</button>
         </form>
-        {% comment %} <div class="progress-block">
-            <h3>Прогресс</h3>
+        <div class="progress-block">
+            <h3 class="card-subtitle">Прогресс</h3>
             {% if progress %}
                 <div class="progress-bar">
                     <div class="progress-fill" style="width: {{ progress.progress }}%;"></div>
                     <span class="progress-text">{{ progress.progress|floatformat:1 }}%</span>
                 </div>
-                <p>Статус: {{ progress.status }}</p>
-                <p>Обработано тредов: {{ progress.processed_threads }} из {{ progress.total_threads }}</p>
+                <p class="status-text">Статус: <span class="status-{{ progress.status }}">{{ progress.status }}</span></p>
+                <p class="info-text">Обработано тредов: {{ progress.processed_threads }} из {{ progress.total_threads }}</p>
             {% else %}
-                <p>Парсинг еще не запущен.</p>
+                <p class="info-text">Парсинг еще не запущен.</p>
             {% endif %}
-        </div> {% endcomment %}
+        </div>
     </div>
 
     <!-- Второй бокс: Настройки автоматического парсинга -->
-    <div class="parse-block">
-        <h2>Автоматический парсинг</h2>
+    <div class="parse-block parse-card">
+        <h2 class="card-title">Автоматический парсинг</h2>
         <form method="post" class="parse-form">
             {% csrf_token %}
             <input type="hidden" name="action" value="update_auto_parse">
-            <div class="form-group">
+            <div class="form-group centered checkbox-group">
                 <label for="auto_parse_enabled">Включить автоматический парсинг:</label>
                 <input type="checkbox" id="auto_parse_enabled" name="auto_parse_enabled" {% if progress.auto_parse_enabled %}checked{% endif %}>
             </div>
-            <div class="form-group">
+            <div class="form-group centered">
                 <label for="auto_parse_interval">Интервал перезапуска (минуты):</label>
-                <input type="number" id="auto_parse_interval" name="auto_parse_interval" value="{{ progress.auto_parse_interval }}" min="1" required>
+                <input type="number" id="auto_parse_interval" name="auto_parse_interval" value="{{ progress.auto_parse_interval }}" min="1" required class="input-field">
             </div>
-            <div class="form-group">
+            <div class="form-group centered">
                 <label for="auto_parse_pages">Количество страниц:</label>
-                <input type="number" id="auto_parse_pages" name="auto_parse_pages" value="{{ progress.auto_parse_pages }}" min="1" required>
+                <input type="number" id="auto_parse_pages" name="auto_parse_pages" value="{{ progress.auto_parse_pages }}" min="1" required class="input-field">
             </div>
-            <button type="submit" class="parse-button">Сохранить настройки</button>
+            <button type="submit" class="btn btn-primary">Сохранить настройки</button>
         </form>
         {% if progress.auto_parse_enabled %}
-            <p>Следующий запуск: {{ progress.next_parse_time|date:"H:i d.m.Y" }}</p>
-            <form method="post" class="parse-form" style="margin-top: 1em;">
+            <p class="info-text">Следующий запуск: <span class="highlight">{{ progress.next_parse_time|date:"H:i d.m.Y" }}</span></p>
+            <form method="post" class="parse-form stop-form">
                 {% csrf_token %}
                 <input type="hidden" name="action" value="stop_auto_parse">
-                <button type="submit" class="delete-button">Остановить автоматический парсинг</button>
+                <button type="submit" class="btn btn-danger">Остановить автоматический парсинг</button>
             </form>
         {% endif %}
     </div>
