@@ -1,2006 +1,17 @@
 Watching for file changes with StatReloader
-"GET / HTTP/1.1" 200 1436
+"GET / HTTP/1.1" 200 1492
 "GET /static/css/styles.css HTTP/1.1" 304 0
-"GET / HTTP/1.1" 200 1436
-"GET /judges/ HTTP/1.1" 200 2852
-Internal Server Error: /summary/
+Internal Server Error: /judges/
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 31, in summary_table
-    Q(last_judge_msg__gte=F('first_judge_msg') + timedelta(hours=120)),
-                          ^
-NameError: name 'F' is not defined
-"GET /summary/ HTTP/1.1" 500 60047
-"GET /stats/ HTTP/1.1" 200 203570
-"GET /parse/ HTTP/1.1" 200 1328
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1033.3297247/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1032.3297209/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1030.3297073/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1029.3296938/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1028.3296835/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1025.3296576/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1024.3296540/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1013.3295913/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1012.3295889/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1011.3295851/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1045.3298235/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1043.3298157/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1004.3295564/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1001.3295365/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-delo-no1000.3295347/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-delo-no999.3295339/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-delo-no998.3295296/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-delo-no997.3295272/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no996.3295089/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no991.3294600/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no990.3294596/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no979.3293918/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no969.3293248/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1008.3295625/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1006.3295611/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1005.3295566/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no949.3291967/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no948.3291864/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no944.3291600/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no942.3291566/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no940.3291377/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no939.3291338/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no938.3291311/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no937.3291182/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no935.3291048/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no934.3291041/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no923.3290847/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/otkazano-iskovoe-zajavlenie-no922.3290840/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no921.3290809/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no920.3290703/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenija-no954.3292411/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no952.3292038/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no951.3292032/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no912.3290253/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no908.3289861/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no907.3289859/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no906.3289749/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no896.3289095/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no895.3289079/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no894.3289069/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no891.3288976/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no887.3288753/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no882.3288638/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no881.3288612/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no880.3288581/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no879.3288561/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no918.3290619/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no916.3290373/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no914.3290291/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no860.3287592/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no859.3287525/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no858.3287490/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no857.3287477/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no854.3287033/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no842.3286491/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no841.3286453/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no840.3286444/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no839.3286418/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no874.3288298/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no872.3288133/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no861.3287595/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no817.3285356/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no816.3285340/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no815.3285294/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no814.3285293/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no813.3285093/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no810.3285033/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no807.3284802/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no805.3284759/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no804.3284731/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no803.3284723/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no822.3285659/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no819.3285405/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no818.3285376/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no789.3283944/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no788.3283926/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no787.3283801/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no786.3283769/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no785.3283714/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no782.3283481/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no777.3283433/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no774.3283223/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no762.3282293/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no761.3282272/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no760.3282262/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenija-no757.3282128/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no754.3282078/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no792.3284102/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no791.3284094/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no790.3284070/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no742.3281352/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no741.3281341/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no738.3281242/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no731.3280834/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no720.3280465/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no714.3280266/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no711.3280075/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no750.3281837/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no747.3281630/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no-743.3281424/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no678.3278457/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no680.3278595/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no649.3277111/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no919.3290648/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no851.3286934/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1009.3295742/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no945.3291617/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no724.3280538/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no950.3292014/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/forma-podachi-iskovyx-zajavlenii-v-federalnyi-sud.3250049/ to Atlas Continental
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1031.3297117/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1007.3295615/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no989.3294503/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no943.3291585/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no892.3289028/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no849.3286830/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no806.3284780/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no769.3282691/ to Cary Mahouny
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 1328
-"GET / HTTP/1.1" 200 1436
-"GET /judges/ HTTP/1.1" 200 2852
-"GET /judges/add/ HTTP/1.1" 200 9259
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1032.3297209/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1030.3297073/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1029.3296938/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1028.3296835/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1025.3296576/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1024.3296540/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1013.3295913/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1012.3295889/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1011.3295851/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1045.3298235/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1043.3298157/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1033.3297247/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1001.3295365/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-delo-no1000.3295347/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-delo-no999.3295339/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-delo-no998.3295296/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-delo-no997.3295272/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no996.3295089/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no991.3294600/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no990.3294596/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no979.3293918/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no969.3293248/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1008.3295625/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1006.3295611/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1005.3295566/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1004.3295564/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no948.3291864/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no944.3291600/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no942.3291566/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no940.3291377/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no939.3291338/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no938.3291311/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no937.3291182/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no935.3291048/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no934.3291041/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no923.3290847/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/otkazano-iskovoe-zajavlenie-no922.3290840/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no921.3290809/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no920.3290703/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenija-no954.3292411/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no952.3292038/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no951.3292032/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no949.3291967/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no908.3289861/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no907.3289859/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no906.3289749/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no896.3289095/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no895.3289079/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no894.3289069/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no891.3288976/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no887.3288753/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no882.3288638/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no881.3288612/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no880.3288581/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no879.3288561/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no918.3290619/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no916.3290373/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no914.3290291/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no912.3290253/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no859.3287525/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no858.3287490/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no857.3287477/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no854.3287033/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no842.3286491/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no841.3286453/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no840.3286444/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no839.3286418/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no874.3288298/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no872.3288133/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no861.3287595/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no860.3287592/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no816.3285340/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no815.3285294/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no814.3285293/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no813.3285093/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no810.3285033/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no807.3284802/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no805.3284759/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no804.3284731/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no803.3284723/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no822.3285659/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no819.3285405/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no818.3285376/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no817.3285356/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no788.3283926/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no787.3283801/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no786.3283769/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no785.3283714/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no782.3283481/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no777.3283433/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no774.3283223/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no762.3282293/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no761.3282272/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no760.3282262/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenija-no757.3282128/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no754.3282078/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no792.3284102/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no791.3284094/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no790.3284070/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no789.3283944/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no741.3281341/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no738.3281242/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no731.3280834/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no720.3280465/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no714.3280266/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no711.3280075/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no750.3281837/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no747.3281630/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no-743.3281424/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no742.3281352/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no680.3278595/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no678.3278457/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no649.3277111/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no851.3286934/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1009.3295742/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no945.3291617/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no919.3290648/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no724.3280538/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no950.3292014/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/forma-podachi-iskovyx-zajavlenii-v-federalnyi-sud.3250049/ to Atlas Continental
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1031.3297117/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1007.3295615/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no989.3294503/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no943.3291585/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no892.3289028/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no849.3286830/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no806.3284780/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no769.3282691/ to Cary Mahouny
-"POST /judges/add/ HTTP/1.1" 302 0
-"GET /judges/ HTTP/1.1" 200 3756
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 31, in summary_table
-    Q(last_judge_msg__gte=F('first_judge_msg') + timedelta(hours=120)),
-                          ^
-NameError: name 'F' is not defined
-"GET /summary/ HTTP/1.1" 500 60062
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 31, in summary_table
-    Q(last_judge_msg__gte=F('first_judge_msg') + timedelta(hours=120)),
-                          ^
-NameError: name 'F' is not defined
-"GET /summary/ HTTP/1.1" 500 60062
-"GET /stats/ HTTP/1.1" 200 204536
-"GET /thread/604/ HTTP/1.1" 200 4198
-"GET /thread/12/ HTTP/1.1" 200 7890
-/app/court_secretary/utils/date_utils.py changed, reloading.
-Watching for file changes with StatReloader
-/app/summary/views.py changed, reloading.
-Watching for file changes with StatReloader
-/app/summary/views.py changed, reloading.
-Watching for file changes with StatReloader
-/app/summary/views.py changed, reloading.
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-"GET / HTTP/1.1" 200 1436
-"GET / HTTP/1.1" 200 1436
-"GET / HTTP/1.1" 200 1436
-"GET /summary/ HTTP/1.1" 200 21224
-"GET / HTTP/1.1" 200 1436
-"GET /summary/ HTTP/1.1" 200 21224
-"GET /stats/ HTTP/1.1" 200 204536
-"GET /judges/ HTTP/1.1" 200 3756
-"GET /summary/ HTTP/1.1" 200 21224
-"GET /parse/ HTTP/1.1" 200 1328
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1030.3297073/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1029.3296938/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1028.3296835/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1025.3296576/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1024.3296540/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1013.3295913/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1012.3295889/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1011.3295851/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1045.3298235/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1043.3298157/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1033.3297247/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1032.3297209/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-delo-no1000.3295347/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-delo-no999.3295339/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-delo-no998.3295296/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-delo-no997.3295272/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no996.3295089/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no991.3294600/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no990.3294596/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no979.3293918/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no969.3293248/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1008.3295625/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1006.3295611/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1005.3295566/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1004.3295564/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1001.3295365/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no944.3291600/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no942.3291566/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no940.3291377/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no939.3291338/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no938.3291311/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no937.3291182/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no935.3291048/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no934.3291041/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no923.3290847/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/otkazano-iskovoe-zajavlenie-no922.3290840/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no921.3290809/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no920.3290703/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenija-no954.3292411/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no952.3292038/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no951.3292032/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no949.3291967/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no948.3291864/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no907.3289859/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no906.3289749/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no896.3289095/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no895.3289079/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no894.3289069/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no891.3288976/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no887.3288753/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no882.3288638/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no881.3288612/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no880.3288581/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no879.3288561/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no918.3290619/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no916.3290373/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no914.3290291/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no912.3290253/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no908.3289861/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no858.3287490/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no857.3287477/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no854.3287033/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no842.3286491/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no841.3286453/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no840.3286444/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no839.3286418/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no874.3288298/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no872.3288133/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no861.3287595/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no860.3287592/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no859.3287525/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no815.3285294/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no814.3285293/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no813.3285093/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no810.3285033/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no807.3284802/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no805.3284759/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no804.3284731/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no803.3284723/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no822.3285659/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no819.3285405/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no818.3285376/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no817.3285356/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no816.3285340/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no787.3283801/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no786.3283769/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no785.3283714/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no782.3283481/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no777.3283433/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no774.3283223/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no762.3282293/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no761.3282272/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no760.3282262/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenija-no757.3282128/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no754.3282078/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no792.3284102/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no791.3284094/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no790.3284070/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no789.3283944/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no788.3283926/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no738.3281242/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no731.3280834/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no720.3280465/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no714.3280266/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no711.3280075/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no750.3281837/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no747.3281630/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no-743.3281424/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no742.3281352/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no741.3281341/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no678.3278457/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no680.3278595/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no649.3277111/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1009.3295742/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no945.3291617/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no919.3290648/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no851.3286934/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1031.3297117/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no1007.3295615/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no989.3294503/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no943.3291585/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no892.3289028/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no849.3286830/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no806.3284780/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no769.3282691/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no724.3280538/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/iskovoe-zajavlenie-no950.3292014/ to Cary Mahouny
-Updated leading judge for thread https://forum.gta5rp.com/threads/forma-podachi-iskovyx-zajavlenii-v-federalnyi-sud.3250049/ to Atlas Continental
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 1328
-"GET /summary/ HTTP/1.1" 200 21224
-"GET /judges/ HTTP/1.1" 200 3756
-"GET /summary/ HTTP/1.1" 200 21224
-/app/summary/views.py changed, reloading.
-Watching for file changes with StatReloader
-"GET /summary/ HTTP/1.1" 200 155838
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
     return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160781
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160781
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160645
-Watching for file changes with StatReloader
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160774
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160774
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160774
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160774
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160774
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160774
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160774
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160774
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160774
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160774
-/app/web/models.py changed, reloading.
-Watching for file changes with StatReloader
-/app/parser/parser.py changed, reloading.
-Watching for file changes with StatReloader
-/app/judges/services.py changed, reloading.
-Watching for file changes with StatReloader
-/app/judges/services.py changed, reloading.
-Watching for file changes with StatReloader
-/app/summary/views.py changed, reloading.
-Watching for file changes with StatReloader
-/app/summary/views.py changed, reloading.
-Watching for file changes with StatReloader
-/app/web/views.py changed, reloading.
-Watching for file changes with StatReloader
-/app/web/views.py changed, reloading.
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160758
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
-LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160766
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 psycopg2.errors.UndefinedTable: relation "judges_judge" does not exist
-LINE 1: ...sage"."author" IN (SELECT U0."forum_account" FROM "judges_ju...
-                                                             ^
+LINE 1: SELECT COUNT(*) AS "__count" FROM "judges_judge" WHERE (UPPE...
+                                          ^
 
 
 The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "judges_judge" does not exist
-LINE 1: ...sage"."author" IN (SELECT U0."forum_account" FROM "judges_ju...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160906
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "judges_judge" does not exist
-LINE 1: ...sage"."author" IN (SELECT U0."forum_account" FROM "judges_ju...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "judges_judge" does not exist
-LINE 1: ...sage"."author" IN (SELECT U0."forum_account" FROM "judges_ju...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160906
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "judges_judge" does not exist
-LINE 1: ...sage"."author" IN (SELECT U0."forum_account" FROM "judges_ju...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "judges_judge" does not exist
-LINE 1: ...sage"."author" IN (SELECT U0."forum_account" FROM "judges_ju...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160906
-Internal Server Error: /summary/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-psycopg2.errors.UndefinedTable: relation "judges_judge" does not exist
-LINE 1: ...sage"."author" IN (SELECT U0."forum_account" FROM "judges_ju...
-                                                             ^
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/app/summary/views.py", line 63, in summary_table
-    page_obj = paginator.get_page(page_number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 85, in get_page
-    return self.page(number)
-           ~~~~~~~~~^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 89, in page
-    number = self.validate_number(number)
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 70, in validate_number
-    if number > self.num_pages:
-                ^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 116, in num_pages
-    if self.count == 0 and not self.allow_empty_first_page:
-       ^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-                                         ~~~~~~~~~^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/core/paginator.py", line 110, in count
-    return c()
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/query.py", line 620, in count
-    return self.query.get_count(using=self.db)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 630, in get_count
-    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
-    result = compiler.execute_sql(SINGLE)
-  File "/usr/local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
-    cursor.execute(sql, params)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
-    return super().execute(sql, params)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
-    return self._execute_with_wrappers(
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        sql, params, many=False, executor=self._execute
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 100, in _execute
-    with self.db.wrap_database_errors:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
-    return self.cursor.execute(sql, params)
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-django.db.utils.ProgrammingError: relation "judges_judge" does not exist
-LINE 1: ...sage"."author" IN (SELECT U0."forum_account" FROM "judges_ju...
-                                                             ^
-
-"GET /summary/ HTTP/1.1" 500 160906
-"GET /summary/ HTTP/1.1" 200 6311
-"GET / HTTP/1.1" 200 1436
-"GET /stats/ HTTP/1.1" 200 801
-"GET /summary/ HTTP/1.1" 200 6311
-"GET /stats/ HTTP/1.1" 200 801
-"GET /judges/ HTTP/1.1" 200 1026
-"GET /judges/add/ HTTP/1.1" 200 9259
-"GET /parse/ HTTP/1.1" 200 1328
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 1328
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-Watching for file changes with StatReloader
-"GET / HTTP/1.1" 200 1512
-"GET /summary/ HTTP/1.1" 200 6387
-"GET /judges/ HTTP/1.1" 200 1102
-"GET /stats/ HTTP/1.1" 200 877
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /parse/ HTTP/1.1" 200 1404
-Watching for file changes with StatReloader
-"GET / HTTP/1.1" 200 1512
-"GET /summary/ HTTP/1.1" 200 6387
-"GET /judges/ HTTP/1.1" 200 1102
-"GET /stats/ HTTP/1.1" 200 877
-"GET /parse/ HTTP/1.1" 200 1404
-"GET / HTTP/1.1" 200 1512
-"GET / HTTP/1.1" 200 1512
-"GET /summary/ HTTP/1.1" 200 6387
-"GET / HTTP/1.1" 200 1512
-"GET / HTTP/1.1" 200 1512
-"GET / HTTP/1.1" 200 1512
-"GET / HTTP/1.1" 200 1512
-"GET / HTTP/1.1" 200 1512
-"GET / HTTP/1.1" 200 1512
-"GET /summary/ HTTP/1.1" 200 6387
-"GET /judges/ HTTP/1.1" 200 1102
-"GET /stats/ HTTP/1.1" 200 877
-"GET /parse/ HTTP/1.1" 200 1404
-"GET /stats/ HTTP/1.1" 200 877
-/app/web/models.py changed, reloading.
-Watching for file changes with StatReloader
-/app/web/views.py changed, reloading.
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-"GET / HTTP/1.1" 200 1512
-"GET /parse/ HTTP/1.1" 200 3318
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 3322
-"GET /summary/ HTTP/1.1" 200 36941
-"GET /judges/ HTTP/1.1" 200 1102
-"GET /summary/ HTTP/1.1" 200 36941
-"GET / HTTP/1.1" 200 1512
-"GET /summary/ HTTP/1.1" 200 36941
-"GET /parse/ HTTP/1.1" 200 3322
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 3322
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 3780
-/app/web/models.py changed, reloading.
-Watching for file changes with StatReloader
-/app/web/models.py changed, reloading.
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-"GET /summary/ HTTP/1.1" 200 6387
-"GET /static/css/styles.css HTTP/1.1" 200 21033
-"GET / HTTP/1.1" 200 1512
-"GET /summary/ HTTP/1.1" 200 6387
-"GET /judges/ HTTP/1.1" 200 1102
-"GET /stats/ HTTP/1.1" 200 877
-"GET /stats/ HTTP/1.1" 200 877
-"GET /stats/ HTTP/1.1" 200 877
-"GET /parse/ HTTP/1.1" 200 3318
-Internal Server Error: /parse/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 948, in get_or_create
-    return self.get(**kwargs), False
-           ^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
-    raise self.model.DoesNotExist(
-django_celery_beat.models.PeriodicTask.DoesNotExist: PeriodicTask matching query does not exist.
-
-During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
   File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
@@ -2009,90 +20,338 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/app/web/views.py", line 44, in trigger_parse
-    task, _ = PeriodicTask.objects.get_or_create(name='auto-parse', defaults={'task': 'web.tasks.auto_parse_task'})
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/app/judges/views.py", line 20, in judges_list
+    page_obj = paginator.get_page(page_number)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 85, in get_page
+    return self.page(number)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 89, in page
+    number = self.validate_number(number)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 110, in count
+    return c()
+           ^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 955, in get_or_create
-    return self.create(**params), True
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
-    obj.save(force_insert=True, using=self.db)
-  File "/usr/local/lib/python3.12/site-packages/django_celery_beat/models.py", line 619, in save
-    self.validate_unique()
-  File "/usr/local/lib/python3.12/site-packages/django_celery_beat/models.py", line 593, in validate_unique
-    raise ValidationError(
-django.core.exceptions.ValidationError: ['One of clocked, interval, crontab, or solar must be set.']
-"POST /parse/ HTTP/1.1" 500 94794
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "judges_judge" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "judges_judge" WHERE (UPPE...
+                                          ^
+
+"GET /judges/ HTTP/1.1" 500 146497
+Internal Server Error: /summary/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
+LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/summary/views.py", line 63, in summary_table
+    page_obj = paginator.get_page(page_number)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 85, in get_page
+    return self.page(number)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 89, in page
+    number = self.validate_number(number)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 110, in count
+    return c()
+           ^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
+LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
+                                                             ^
+
+"GET /summary/ HTTP/1.1" 500 161664
+Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
+LINE 1: ..."web_threadmessage"."id") AS "message_count" FROM "web_forum...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/web/views.py", line 16, in stats
+    total_messages = sum(t.message_count for t in threads)
+                                                  ^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
+LINE 1: ..."web_threadmessage"."id") AS "message_count" FROM "web_forum...
+                                                             ^
+
+"GET /stats/ HTTP/1.1" 500 118500
 Watching for file changes with StatReloader
-"GET /parse/ HTTP/1.1" 200 3318
-"GET /parse/ HTTP/1.1" 200 3318
-"GET /parse/ HTTP/1.1" 200 3318
+"GET / HTTP/1.1" 200 1492
+Internal Server Error: /summary/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "web_forumthread" does not exist
+LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/summary/views.py", line 63, in summary_table
+    page_obj = paginator.get_page(page_number)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 85, in get_page
+    return self.page(number)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 89, in page
+    number = self.validate_number(number)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 110, in count
+    return c()
+           ^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "web_forumthread" does not exist
+LINE 1: ...al)) THEN true ELSE false END AS "is_urgent" FROM "web_forum...
+                                                             ^
+
+"GET /summary/ HTTP/1.1" 500 161664
+Watching for file changes with StatReloader
+"GET /summary/ HTTP/1.1" 200 6367
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 1492
+"GET /summary/ HTTP/1.1" 200 6367
+"GET /judges/ HTTP/1.1" 200 1082
+"GET /stats/ HTTP/1.1" 200 857
+"GET /parse/ HTTP/1.1" 200 3760
+"GET /stats/ HTTP/1.1" 200 857
+"GET /judges/ HTTP/1.1" 200 1082
+"GET /stats/ HTTP/1.1" 200 857
+"GET /parse/ HTTP/1.1" 200 3760
+"GET / HTTP/1.1" 200 1492
+"GET /judges/ HTTP/1.1" 200 1082
+"GET /judges/ HTTP/1.1" 200 1082
+"GET /parse/ HTTP/1.1" 200 3760
 "POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 3322
+"GET /parse/ HTTP/1.1" 200 4324
+/app/court_secretary/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/app/court_secretary/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /parse/ HTTP/1.1" 200 4324
+"GET /parse/ HTTP/1.1" 200 4324
+"GET /parse/ HTTP/1.1" 200 4324
+"GET /parse/ HTTP/1.1" 200 4324
+"GET / HTTP/1.1" 200 1492
+"GET /summary/ HTTP/1.1" 200 36864
+"GET /judges/ HTTP/1.1" 200 1082
+"GET /stats/ HTTP/1.1" 200 7620
+"GET /parse/ HTTP/1.1" 200 4324
+"GET /stats/ HTTP/1.1" 200 7620
+"GET /parse/ HTTP/1.1" 200 4324
+"GET /stats/ HTTP/1.1" 200 7620
+"GET /judges/ HTTP/1.1" 200 1082
+"GET /summary/ HTTP/1.1" 200 36864
+"GET / HTTP/1.1" 200 1492
+"GET /summary/ HTTP/1.1" 200 36864
+"GET /judges/ HTTP/1.1" 200 1082
+"GET /parse/ HTTP/1.1" 200 4324
+"GET /judges/ HTTP/1.1" 200 1082
+"GET /summary/ HTTP/1.1" 200 36864
+"GET / HTTP/1.1" 200 1492
+"GET /summary/ HTTP/1.1" 200 36864
+"GET /judges/ HTTP/1.1" 200 1082
+"GET /stats/ HTTP/1.1" 200 7620
+"GET /parse/ HTTP/1.1" 200 4324
+"GET /stats/ HTTP/1.1" 200 7620
+"GET /judges/ HTTP/1.1" 200 1082
+"GET /parse/ HTTP/1.1" 200 4324
+"GET / HTTP/1.1" 200 1492
+"GET /judges/ HTTP/1.1" 200 1082
+"GET / HTTP/1.1" 200 1492
+"GET /judges/ HTTP/1.1" 200 1082
+"GET /stats/ HTTP/1.1" 200 7620
+"GET /parse/ HTTP/1.1" 200 4324
+"GET /stats/ HTTP/1.1" 200 7620
+"GET /parse/ HTTP/1.1" 200 4324
 "POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 3851
-"GET /parse/ HTTP/1.1" 200 3851
-"GET /static/css/styles.css HTTP/1.1" 200 21033
-"GET /parse/ HTTP/1.1" 200 3851
-"GET /parse/ HTTP/1.1" 200 3851
-"GET /parse/ HTTP/1.1" 200 3851
-"GET /parse/ HTTP/1.1" 200 3851
-"GET /parse/ HTTP/1.1" 200 3851
-"GET /parse/ HTTP/1.1" 200 3851
-"GET /parse/ HTTP/1.1" 200 3851
-"GET /static/css/styles.css HTTP/1.1" 200 21033
-"GET /parse/ HTTP/1.1" 200 3423
-"GET /static/css/styles.css HTTP/1.1" 200 21034
-"GET /parse/ HTTP/1.1" 200 3423
+"GET /parse/ HTTP/1.1" 200 3751
+"GET /summary/ HTTP/1.1" 200 36864
+"GET /parse/ HTTP/1.1" 200 3751
 "GET /static/css/styles.css HTTP/1.1" 304 0
-"GET /parse/ HTTP/1.1" 200 3423
-"GET /parse/ HTTP/1.1" 200 3403
-"GET /static/css/styles.css HTTP/1.1" 304 0
-"GET /parse/ HTTP/1.1" 200 4176
-"GET /static/css/styles.css HTTP/1.1" 200 24530
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 4176
-"GET /static/css/styles.css HTTP/1.1" 304 0
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 4176
-"GET /static/css/styles.css HTTP/1.1" 304 0
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 3607
-"GET /static/css/styles.css HTTP/1.1" 304 0
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 3609
-"GET /static/css/styles.css HTTP/1.1" 304 0
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 3609
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 3609
-"GET /static/css/styles.css HTTP/1.1" 304 0
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 3609
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 3609
-"GET /static/css/styles.css HTTP/1.1" 304 0
-"POST /parse/ HTTP/1.1" 302 0
-"GET /parse/ HTTP/1.1" 200 3611
-"GET /static/css/styles.css HTTP/1.1" 304 0
-"GET /parse/ HTTP/1.1" 200 3647
-"GET /static/css/styles.css HTTP/1.1" 304 0
-"GET /parse/ HTTP/1.1" 200 3647
-"GET /parse/ HTTP/1.1" 200 3647
-"GET /parse/ HTTP/1.1" 200 3647
-"GET /parse/ HTTP/1.1" 200 3647
-"GET /parse/ HTTP/1.1" 200 3647
-"GET /parse/ HTTP/1.1" 200 3647
-"GET /parse/ HTTP/1.1" 200 3647
-"GET /static/css/styles.css HTTP/1.1" 200 24988
-"GET /parse/ HTTP/1.1" 200 3647
-"GET /parse/ HTTP/1.1" 200 3647
-"GET /parse/ HTTP/1.1" 200 3647
-"GET /static/css/styles.css HTTP/1.1" 304 0
-"GET /parse/ HTTP/1.1" 200 3647
-"GET /static/css/styles.css HTTP/1.1" 304 0
-"GET /parse/ HTTP/1.1" 200 3671
-"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /stats/ HTTP/1.1" 200 7620
+"GET /parse/ HTTP/1.1" 200 3751
+"GET /judges/ HTTP/1.1" 200 1082
+/app/judges/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader

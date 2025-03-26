@@ -15,7 +15,7 @@ def judges_list(request):
     judges = Judge.objects.filter(
         Q(full_name__icontains=query) | Q(forum_account__icontains=query)
     ).prefetch_related('employment_history')
-    paginator = Paginator(judges, 9)
+    paginator = Paginator(judges, 27)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     return render(request, 'judges/judges_list.html', {'page_obj': page_obj, 'query': query})
