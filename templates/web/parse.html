@@ -1,3 +1,4 @@
+<!-- web/templates/web/parse.html -->
 {% extends "base.html" %}
 {% load static %}
 
@@ -25,7 +26,7 @@
                     <span class="progress-text">{{ progress.progress|floatformat:1 }}%</span>
                 </div>
                 <p class="status-text">Статус: <span class="status-{{ progress.status }}">{{ progress.status }}</span></p>
-                <p class="info-text">Обработано тредов: {{ progress.processed_threads }} из {{ progress.total_threads }}</p>
+                <p class="info-text">Обработано тредов: <span id="processed-threads">{{ progress.processed_threads }}</span> из <span id="total-threads">{{ progress.total_threads }}</span></p>
             {% else %}
                 <p class="info-text">Парсинг еще не запущен.</p>
             {% endif %}
@@ -38,9 +39,9 @@
         <form method="post" class="parse-form">
             {% csrf_token %}
             <input type="hidden" name="action" value="update_auto_parse">
-            <div class="form-group centered checkbox-group">
+            <div class="form-group centered">
                 <label for="auto_parse_enabled">Включить автоматический парсинг:</label>
-                <input type="checkbox" id="auto_parse_enabled" name="auto_parse_enabled" {% if progress.auto_parse_enabled %}checked{% endif %}>
+                <input type="checkbox" id="auto_parse_enabled" name="auto_parse_enabled" {% if progress.auto_parse_enabled %}checked{% endif %} class="checkbox-field">
             </div>
             <div class="form-group centered">
                 <label for="auto_parse_interval">Интервал перезапуска (минуты):</label>

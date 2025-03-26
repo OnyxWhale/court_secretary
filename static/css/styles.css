@@ -1045,3 +1045,196 @@ form textarea:-webkit-autofill:focus {
     margin: 0 auto;
     display: block;
 }
+
+/* Контейнер для всей страницы */
+.parse-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Карточки для блоков */
+.parse-card {
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1.5em;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.parse-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовки карточек */
+.card-title {
+    color: #FF9900;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.card-subtitle {
+    color: #D4D4D4;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+/* Стили для формы */
+.parse-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* Центрирование элементов в form-group */
+.form-group.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5em;
+}
+
+.form-group.centered label {
+    color: #FF9900;
+    font-weight: bold;
+}
+
+.input-field {
+    padding: 0.6em;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    background-color: #2A2A2A;
+    color: #D4D4D4;
+    font-size: 1em;
+    font-weight: bold; /* Жирный шрифт */
+    text-align: center; /* Центрирование текста */
+    width: 150px; /* Фиксированная ширина */
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #FF9900;
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.3);
+}
+
+.checkbox-field {
+    width: 20px;
+    height: 20px;
+    accent-color: #FF9900;
+    margin: 0 auto; /* Центрирование чекбокса */
+}
+
+/* Кнопки */
+.btn {
+    padding: 0.8em 1.2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #FF9900;
+    color: #1A1A1A;
+}
+
+.btn-primary:hover {
+    background-color: #FFAD33;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background-color: #D9534F;
+    color: #FFFFFF;
+}
+
+.btn-danger:hover {
+    background-color: #C9302C;
+    transform: scale(1.05);
+}
+
+/* Прогресс-бар */
+.progress-bar {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #3C3C3C;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1em 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #FF9900;
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1A1A1A;
+    font-weight: bold;
+}
+
+/* Текст статуса и информации */
+.status-text {
+    color: #D4D4D4;
+    font-size: 1em;
+}
+
+.status-running {
+    color: #FF9900;
+    font-weight: bold;
+}
+
+.status-stopped {
+    color: #D9534F;
+    font-weight: bold;
+}
+
+.status-not_started {
+    color: #6C757D;
+}
+
+.info-text {
+    color: #D4D4D4;
+    font-size: 0.9em;
+    margin: 0.5em 0;
+}
+
+.highlight {
+    color: #FF9900;
+    font-weight: bold;
+}
+
+/* Форма остановки */
+.stop-form {
+    margin-top: 1em;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .parse-container {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .parse-card {
+        max-width: 100%;
+    }
+}
