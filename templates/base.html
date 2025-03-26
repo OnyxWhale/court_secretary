@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Court Secretary</title>
+    <title>{% block title %}Court Secretary{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
@@ -11,11 +11,11 @@
         <h1>Court Secretary</h1>
         <a>by Atlas Continental</a>
         <nav>
-            <a href="{% url 'web:index' %}">Home</a>
-            <a href="{% url 'web:stats' %}">Statistics</a>
+            <a href="{% url 'web:index' %}">Главная</a>
             <a href="{% url 'summary:summary_table' %}">Сводная таблица</a>
             <a href="{% url 'judges:judges_list' %}">Судьи</a>
-            <a href="{% url 'web:progress' %}">Progress</a>
+            <a href="{% url 'web:stats' %}">Сырые данные</a>
+            <a href="{% url 'web:trigger_parse' %}">Progress</a>
         </nav>
     </header>
     <main>

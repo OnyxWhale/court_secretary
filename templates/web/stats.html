@@ -2,9 +2,7 @@
 {% load static %}
 
 {% block content %}
-    <h2>Statistics</h2>
-    <p>Total Messages: {{ total_messages }}</p>
-    <h3>Threads</h3>
+    <h2>Сырые данные</h2>
     <div class="threads-grid">
         {% for thread in threads %}
             <a href="{% url 'web:thread_detail' thread.id %}" class="thread-card">

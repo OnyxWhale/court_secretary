@@ -3,11 +3,11 @@
 
 {% block content %}
     <h2>Список судей</h2>
-    <p><a href="{% url 'judges:judge_add' %}" class="button-link">Добавить судью</a></p>
-    <form method="get" class="search-form">
-        <input type="text" name="q" value="{{ query }}" placeholder="Поиск по имени или аккаунту">
-        <button type="submit">Найти</button>
-    </form>
+    <div class="actions">
+        <a href="{% url 'judges:judge_add' %}" class="button-link">Добавить судью</a>
+        <a href="{% url 'summary:summary_table' %}" class="button-link">Назад к таблице</a>
+        <p></p>
+    </div>
     <div class="judges-grid">
         {% for judge in page_obj %}
             <div class="judge-card">
@@ -17,7 +17,7 @@
                 <p><strong>Telegram:</strong> {{ judge.telegram|default:"—" }}</p>
                 <p><strong>Почта:</strong> {{ judge.email|default:"—" }}</p>
                 <p><strong>Дополнительно:</strong> {{ judge.additional_info|default:"—" }}</p>
-                <p><strong>История приёма/увольнения:</strong></p>
+                <p><strong>Рабочая книга:</strong></p>
                 <div class="history-list">
                     {% for history in judge.employment_history.all %}
                         <p>Принят: {{ history.hire_date }} | Уволен: {{ history.dismissal_date|default:"—" }}</p>
@@ -34,14 +34,4 @@
             <p>Нет судей в базе</p>
         {% endfor %}
     </div>
-    <div class="pagination">
-        {% if page_obj.has_previous %}
-            <a href="?page={{ page_obj.previous_page_number }}{% if query %}&q={{ query }}{% endif %}">Предыдущая</a>
-        {% endif %}
-        <span>Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}</span>
-        {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}{% if query %}&q={{ query }}{% endif %}">Следующая</a>
-        {% endif %}
-    </div>
-    <p><a href="{% url 'web:stats' %}" class="button-link">Назад к статистике</a></p>
 {% endblock %}

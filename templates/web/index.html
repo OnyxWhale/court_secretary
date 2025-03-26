@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>Добро пожаловать в Court Secretary</h2>
+    <div class="dashboard-grid">
+        <a href="{% url 'summary:summary_table' %}" class="dashboard-card">
+            <h3>Сводная таблица</h3>
+            <p>Обзор всех тем</p>
+        </a>
+        <a href="{% url 'judges:judges_list' %}" class="dashboard-card">
+            <h3>Судьи</h3>
+            <p>Управление судьями</p>
+        </a>
+        <a href="{% url 'web:stats' %}" class="dashboard-card">
+            <h3>Сырые данные</h3>
+            <p>Просмотр данных форума</p>
+        </a>
+        <a href="{% url 'web:trigger_parse' %}" class="dashboard-card">
+            <h3>Ручной парсинг</h3>
+            <p>Запуск и прогресс парсинга</p>
+        </a>
+    </div>
+{% endblock %}
