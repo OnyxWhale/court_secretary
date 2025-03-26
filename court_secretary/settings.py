@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'parser',
     'summary',
     'judges',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -57,6 +58,19 @@ DATABASES = {
         'HOST': 'db',
         'PORT': '5432',
     }
+}
+
+CELERY_BROKER_URL = 'redis://redis:6379/0'
+CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+
+CELERY_BEAT_SCHEDULE = {
+    'auto-parse': {
+        'task': 'web.tasks.auto_parse_task',
+        'schedule': 60.0,  # Интервал по умолчанию в секундах (будет обновляться)
+    },
 }
 
 STATIC_URL = '/static/'

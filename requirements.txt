@@ -1,4 +1,7 @@
 Django==5.1.7
-psycopg2-binary==2.9.10
+psycopg2-binary==2.9.9
 requests==2.32.3
-beautifulsoup4==4.13.3
+beautifulsoup4==4.12.3
+celery==5.3.6
+redis==5.0.8
+django-celery-beat==2.7.0

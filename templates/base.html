@@ -8,14 +8,16 @@
 </head>
 <body>
     <header>
-        <h1>Court Secretary</h1>
-        <a>by Atlas Continental</a>
+        <div class="title-container">
+            <h1>Court Secretary</h1>
+            <a class="byline">by Atlas Continental</a>
+        </div>
         <nav>
             <a href="{% url 'web:index' %}">Главная</a>
-            <a href="{% url 'summary:summary_table' %}">Сводная таблица</a>
+            <a href="{% url 'summary:summary_table' %}">Таблица</a>
             <a href="{% url 'judges:judges_list' %}">Судьи</a>
-            <a href="{% url 'web:stats' %}">Сырые данные</a>
-            <a href="{% url 'web:trigger_parse' %}">Progress</a>
+            <a href="{% url 'web:stats' %}">Данные</a>
+            <a href="{% url 'web:trigger_parse' %}">Парсинг</a>
         </nav>
     </header>
     <main>

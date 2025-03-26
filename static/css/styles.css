@@ -31,11 +31,15 @@ nav a {
     text-decoration: none;
     color: #FF9900;
     font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 1.15em; /* Увеличиваем размер шрифта */
+    padding: 0.5em 0.8em; /* Добавляем внутренний отступ для большего размера кнопки */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Добавляем переход для фона */
+    border-radius: 5px; /* Скругляем углы для кнопочного вида */
 }
 
 nav a:hover {
     color: #FFAD33;
+    background-color: rgba(255, 173, 51, 0.1); /* Легкий фон при наведении */
 }
 
 /* Основной контент */
@@ -792,4 +796,40 @@ form textarea:-webkit-autofill:focus {
     width: 16px;
     height: 16px;
     accent-color: #FF3333;
+}
+
+/* Добавьте это в конец styles.css */
+
+/* Группа элементов формы */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    color: #FF9900;
+    font-weight: bold;
+}
+
+.form-group input[type="number"] {
+    padding: 0.6em;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    background-color: #1A1A1A;
+    color: #D4D4D4;
+    width: 100px; /* Ограничим ширину для компактности */
+}
+
+.form-group input[type="number"]:focus {
+    outline: none;
+    border-color: #FF9900;
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.3);
+}
+
+.form-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #FF9900;
 }
