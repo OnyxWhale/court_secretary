@@ -1,0 +1,7 @@
+{% if button_type == 'save' %}
+    <button type="submit" class="save-button">{{ button_text|default:"Сохранить" }}</button>
+{% elif button_type == 'delete' %}
+    <button type="submit" class="delete-button">{{ button_text|default:"Удалить" }}</button>
+{% elif button_type == 'link' %}
+    <a href="{{ url }}" class="button-link">{{ button_text }}</a>
+{% endif %}

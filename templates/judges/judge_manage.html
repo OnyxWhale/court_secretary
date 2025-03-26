@@ -57,11 +57,11 @@
 
             <!-- Кнопки действий -->
             <div class="form-actions">
-                <button type="submit" class="save-button">Сохранить</button>
+                {% include 'buttons.html' with button_type='save' button_text='Сохранить' %}
                 {% if judge %}
                     <form method="post" action="{% url 'judges:judge_delete' judge.id %}" onsubmit="return confirm('Вы уверены, что хотите удалить судью?');" class="delete-judge-form">
                         {% csrf_token %}
-                        <button type="submit" class="delete-button">Удалить судью</button>
+                        {% include 'buttons.html' with button_type='delete' button_text='Удалить судью' %}
                     </form>
                 {% endif %}
             </div>

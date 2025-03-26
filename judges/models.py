@@ -2,6 +2,7 @@ from django.db import models
 from django.core.validators import RegexValidator
 
 class Judge(models.Model):
+    """Модель судьи."""
     full_name = models.CharField(max_length=255, verbose_name="ФИО")
     forum_account = models.CharField(max_length=100, verbose_name="Форумный аккаунт")
     discord_id = models.CharField(
@@ -23,10 +24,14 @@ class Judge(models.Model):
         ]
 
 class EmploymentHistory(models.Model):
+    """Модель истории приёма/увольнения."""
     judge = models.ForeignKey(Judge, related_name='employment_history', on_delete=models.CASCADE, verbose_name="Судья")
-    hire_date = models.DateField(verbose_name="Дата приёма на работу")
-    dismissal_date = models.DateField(null=True, blank=True, verbose_name="Дата увольнения")
+    hire_date = models.DateField(verbose_name="Дата приёма на работу", db_index=True)
+    dismissal_date = models.DateField(null=True, blank=True, verbose_name="Дата увольнения", db_index=True)
 
     class Meta:
         verbose_name = "История приёма/увольнения"
         verbose_name_plural = "История приёмов/увольнений"
+        indexes = [
+            models.Index(fields=['hire_date', 'dismissal_date']),
+        ]

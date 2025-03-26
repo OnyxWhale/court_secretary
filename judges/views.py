@@ -4,12 +4,13 @@ from django.contrib import messages
 from django.views.decorators.csrf import csrf_protect
 from django.db.models import Q
 from django.core.paginator import Paginator
-from django.urls import reverse  # Добавляем импорт reverse
+from django.urls import reverse
 from .models import Judge, EmploymentHistory
 from .forms import JudgeForm, EmploymentHistoryForm
-from .utils import update_leading_judge_for_threads
+from .services import JudgeService
 
 def judges_list(request):
+    """Отображает список судей с пагинацией."""
     query = request.GET.get('q', '')
     judges = Judge.objects.filter(
         Q(full_name__icontains=query) | Q(forum_account__icontains=query)
@@ -20,6 +21,7 @@ def judges_list(request):
     return render(request, 'judges/judges_list.html', {'page_obj': page_obj, 'query': query})
 
 def judge_add(request):
+    """Добавляет нового судью."""
     EmploymentHistoryFormSet = modelformset_factory(EmploymentHistory, form=EmploymentHistoryForm, extra=1, can_delete=True)
     if request.method == 'POST':
         form = JudgeForm(request.POST)
@@ -31,7 +33,7 @@ def judge_add(request):
                     history = f.save(commit=False)
                     history.judge = judge
                     history.save()
-            update_leading_judge_for_threads()
+            JudgeService.update_leading_judge_for_threads()
             messages.success(request, "Судья успешно добавлен.")
             return redirect('judges:judges_list')
     else:
@@ -40,6 +42,7 @@ def judge_add(request):
     return render(request, 'judges/judge_manage.html', {'form': form, 'formset': formset, 'judge': None})
 
 def judge_edit(request, judge_id):
+    """Редактирует существующего судью."""
     judge = get_object_or_404(Judge, id=judge_id)
     EmploymentHistoryFormSet = modelformset_factory(EmploymentHistory, form=EmploymentHistoryForm, extra=1, can_delete=True)
     if request.method == 'POST':
@@ -55,7 +58,7 @@ def judge_edit(request, judge_id):
             for f in formset.deleted_forms:
                 if f.instance.pk:
                     f.instance.delete()
-            update_leading_judge_for_threads()
+            JudgeService.update_leading_judge_for_threads()
             messages.success(request, "Изменения успешно сохранены.")
             return redirect('judges:judges_list')
     else:
@@ -64,15 +67,17 @@ def judge_edit(request, judge_id):
     return render(request, 'judges/judge_manage.html', {'form': form, 'formset': formset, 'judge': judge})
 
 def judge_delete(request, judge_id):
+    """Удаляет судью."""
     judge = get_object_or_404(Judge, id=judge_id)
     if request.method == 'POST':
         judge.delete()
-        update_leading_judge_for_threads()
+        JudgeService.update_leading_judge_for_threads()
         return redirect('judges:judges_list')
     return render(request, 'judges/judge_confirm_delete.html', {'judge': judge})
 
 @csrf_protect
 def employment_history_delete(request, pk):
+    """Удаляет запись из истории приёма/увольнения."""
     history = get_object_or_404(EmploymentHistory, pk=pk)
     if request.method == "POST":
         history.delete()

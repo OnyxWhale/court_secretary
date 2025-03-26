@@ -1,15 +1,10 @@
 from pathlib import Path
 import os
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-yfo)%$dtcdynbu#+te4as-wo2j34x-p#m-j@!w!7xj$weq+kw+'
-
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = ['109.120.178.123', 'localhost']
 
 INSTALLED_APPS = [
@@ -69,12 +64,15 @@ STATICFILES_DIRS = ['static']
 STATIC_ROOT = '/app/staticfiles'
 
 SCHEDULED_PARSING_INTERVAL = 3600
+FORUM_URL = "https://forum.gta5rp.com/forums/federalnyj-sud.1745/"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+URGENT_THREAD_THRESHOLD_HOURS = 50
+TRIAL_DURATION_THRESHOLD_HOURS = 120
 
-# Настройка логирования
+# Логирование
 LOG_DIR = BASE_DIR / 'logs'
 LOG_FILE = LOG_DIR / 'app.log'
 
-# Создаем директорию и файл, если они не существуют
 if not LOG_DIR.exists():
     os.makedirs(LOG_DIR)
 if not LOG_FILE.exists():
@@ -87,7 +85,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': str(LOG_FILE),  # Преобразуем Path в строку
+            'filename': str(LOG_FILE),
         },
     },
     'loggers': {

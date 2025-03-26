@@ -2,7 +2,6 @@ FROM python:3.13-slim
 
 WORKDIR /app
 
-# Установка netcat для проверки доступности базы данных
 RUN apt-get update && apt-get install -y netcat-openbsd && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
